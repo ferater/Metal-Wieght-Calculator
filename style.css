@@ -70,6 +70,19 @@ body {
 .container .wrapper .svg-container svg.shape line {
   stroke: var(--on-primary);
 }
+.container .wrapper .svg-container svg.shape line.selected, .container .wrapper .svg-container svg.shape line.error, .container .wrapper .svg-container svg.shape line.correct {
+  stroke-width: 0.25rem;
+}
+.container .wrapper .svg-container svg.shape line.selected {
+  stroke: yellow;
+  animation: selectedElement 1s linear infinite;
+}
+.container .wrapper .svg-container svg.shape line.error {
+  stroke: red;
+}
+.container .wrapper .svg-container svg.shape line.correct {
+  stroke: green;
+}
 .container .wrapper .svg-container .indicator-text {
   min-width: 3rem;
   height: 2rem;
@@ -173,4 +186,16 @@ body {
 }
 .container .wrapper .form-container .form-actions button.calculate {
   background-color: var(--primary);
+}
+
+@keyframes selectedElement {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }/*# sourceMappingURL=style.css.map */
