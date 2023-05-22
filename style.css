@@ -5,6 +5,7 @@
   --black-rgb: 0, 0, 0;
   --black-lighten-10: #1a1a1a;
   --primary: #f55951;
+  --primary-rgb: 245, 89, 81;
   --on-primary: #ffffff;
   --bg-color: #f1e8e6;
   --bg-color-light-5: #faf7f6;
@@ -43,8 +44,9 @@ body {
 }
 .container .header .geometric-shapes {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .container .header .geometric-shape-title h3 {
   font-weight: 700;
@@ -57,7 +59,9 @@ body {
 }
 .container .wrapper .svg-container {
   width: 40%;
+  height: inherit;
   background-color: rgba(var(--black-rgb), 0.7);
+  position: relative;
 }
 .container .wrapper .svg-container svg.shape {
   width: 100%;
@@ -66,7 +70,107 @@ body {
 .container .wrapper .svg-container svg.shape line {
   stroke: var(--on-primary);
 }
+.container .wrapper .svg-container .indicator-text {
+  min-width: 3rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  background-color: var(--on-primary);
+  text-align: center;
+  position: absolute;
+}
+.container .wrapper .svg-container .indicator-text span {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: rgba(var(--black-rgb), 0.7);
+}
+.container .wrapper .svg-container.rectangle .indicator-text.indicator-line-a {
+  width: 9rem;
+  bottom: 5.65rem;
+  left: 6.45rem;
+}
+.container .wrapper .svg-container.rectangle .indicator-text.indicator-line-b {
+  width: 8rem;
+  bottom: 13.25rem;
+  right: 3rem;
+  rotate: -59deg;
+}
+.container .wrapper .svg-container.rectangle .indicator-text.indicator-line-h {
+  width: 9rem;
+  bottom: 9rem;
+  left: 9.45rem;
+}
 .container .wrapper .form-container {
   width: 60%;
+  padding: 2rem 2rem;
   background-color: orange;
+}
+.container .wrapper .form-container .input-container {
+  height: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.container .wrapper .form-container .input-container label {
+  width: 12rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 3rem;
+}
+.container .wrapper .form-container .input-container select {
+  width: 10rem;
+  height: 1.75rem;
+  padding: 0 0.75rem;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 7px 0 0 7px;
+  box-shadow: 3px 3px rgba(var(--black-rgb), 0.3);
+}
+.container .wrapper .form-container .input-container input {
+  width: 10rem;
+  height: 1.75rem;
+  padding: 0 0.75rem;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 7px 0 0 7px;
+  box-shadow: 3px 3px rgba(var(--black-rgb), 0.3);
+  color: var(--primary);
+  transition: all 0.2s linear;
+}
+.container .wrapper .form-container .input-container input:focus {
+  border-color: var(--primary);
+}
+.container .wrapper .form-container .input-container .unit-text {
+  width: 3rem;
+  height: 1.75rem;
+  background-color: var(--primary);
+  padding: 0 0.5rem;
+  border-radius: 0 7px 7px 0;
+  box-shadow: 3px 3px rgba(var(--black-rgb), 0.3);
+}
+.container .wrapper .form-container .input-container .unit-text span {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--on-primary);
+}
+.container .wrapper .form-container .form-actions {
+  width: 25rem;
+  height: 1.75rem;
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container .wrapper .form-container .form-actions button {
+  width: 45%;
+  height: 1.75rem;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: scale 0.1s linear;
+}
+.container .wrapper .form-container .form-actions button:active {
+  scale: 0.99;
+}
+.container .wrapper .form-container .form-actions button.calculate {
+  background-color: var(--primary);
 }/*# sourceMappingURL=style.css.map */

@@ -28,8 +28,8 @@
             </div>
         </div>
         <div class="wrapper">
-            <div class="svg-container">
-                <svg class="shape rectangle">
+            <div class="svg-container rectangle">
+                <svg class="shape ">
                     <!-- top -->
                     <!-- short lines -->
                     <line x1="200" y1="50" x2="430" y2="50"></line>
@@ -58,8 +58,53 @@
                     <line x1="327" y1="326" x2="365" y2="270"></line>
                     <line x1="315" y1="325" x2="340" y2="330"></line>
                 </svg>
+                <div class="indicator-text indicator-line-a">
+                    <span>0 mm</span>
+                </div>
+                <div class="indicator-text indicator-line-b">
+                    <span>0 mm</span>
+                </div>
+                <div class="indicator-text indicator-line-h">
+                    <span>0 mm</span>
+                </div>
             </div>
-            <div class="form-container"></div>
+            <div class="form-container">
+                <div class="input-container material-select-container">
+                    <label for="material-select">Material Seçiniz : * </label>
+                    <select name="material" id="material">
+                        <option selected disabled>Lütfen Material Seçiniz</option>
+                        <option value="7.86">Demir</option>
+                    </select>
+                    <div class="unit-text">
+                        <span>7.86</span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="rectangle-line-a">Kenar A : *</label>
+                    <input type="number" name="rectangle-line-a" id="rectangle-line-a" />
+                    <div class="unit-text">
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="rectangle-line-a">Kenar B : *</label>
+                    <input type="number" name="rectangle-line-b" id="rectangle-line-b" />
+                    <div class="unit-text">
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="rectangle-line-a">Kalınlık (H) : *</label>
+                    <input type="number" name="rectangle-line-h" id="rectangle-line-h" />
+                    <div class="unit-text">
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="clear">Temizle</button>
+                    <button class="calculate">Hesapla</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

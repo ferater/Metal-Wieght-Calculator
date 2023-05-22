@@ -14,6 +14,7 @@ $bg-color: #f1e8e6;
   --black-rgb: #{hexToRGB($black)};
   --black-lighten-10: #{lighten($black, 10)};
   --primary: #{$primary};
+  --primary-rgb: #{hexToRGB($primary)};
   --on-primary: #{$on-primary};
   --bg-color: #{$bg-color};
   --bg-color-light-5: #{lighten($bg-color, 5)};
