@@ -1,0 +1,26 @@
+//container
+$container-width: 80rem;
+$container-hegiht: 32rem;
+$container-bg-color: var(--bgcolor);
+$container-border-radius: 2rem;
+$container-shadow-color: var(--bgcolor);
+$container-shadow-blur: 0.625rem;
+$container-shadow-color: var(--black-rgb);
+$container-shadow-opacity: 0.3;
+/////////////////
+/// header
+$header-height: 4rem;
+$header-bg-color: var(--primary);
+$header-padding-y: 0.5rem;
+$header-padding-x: 1.5rem;
+//shape select list
+$shape-select-list-gap: 2rem;
+$shape-title-text-weight: 700;
+$shape-title-text-size: 1.25rem;
+/////////////////////
+/// svg container
+$svg-container-width: 40%;
+$svg-container-bg-color: var(--black-rgb);
+$svg-container-bg-color-opacity: 0.7;
+/// form container
+$form-container-width: 60%;

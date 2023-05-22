@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Metal Weight Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="geometric-shapes">
+                <div class="geometric-shape">
+                    <input type="radio" name="shape" value="rectangle" id="rectangle">
+                    <label for="rectangle">Sac</label>
+                </div>
+                <div class="geometric-shape">
+                    <input type="radio" name="shape" value="round-bar" id="round-bar">
+                    <label for="round-bar">Mil</label>
+                </div>
+            </div>
+            <div class="geometric-shape-title">
+                <h3>Sac</h3>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="svg-container">
+                <svg class="shape rectangle">
+                    <!-- top -->
+                    <!-- short lines -->
+                    <line x1="180" y1="50" x2="430" y2="50"></line>
+                    <line x1="50" y1="250" x2="300" y2="250"></line>
+                    <!-- long lines -->
+                    <line x1="180" y1="50" x2="50" y2="250"></line>
+                    <line x1="430" y1="50" x2="300" y2="250"></line>
+                    <!-- bottom -->
+                    <!-- short lines -->
+                    <line x1="50" y1="320" x2="300" y2="320"></line>
+                    <!-- long lines -->
+
+                </svg>
+            </div>
+            <div class="form-container"></div>
+        </div>
+    </div>
+</body>
+
+</html>

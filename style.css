@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --black-rgb: 0, 0, 0;
+  --black-lighten-10: #1a1a1a;
+  --primary: #f55951;
+  --on-primary: #ffffff;
+  --bg-color: #f1e8e6;
+  --bg-color-light-5: #faf7f6;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg-color-light-5);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80rem;
+  height: 32rem;
+  background-color: var(--bgcolor);
+  border-radius: 2rem;
+  box-shadow: 0px 0px 0.625rem rgba(var(--black-rgb), 0.3);
+  overflow: hidden;
+}
+.container .header {
+  height: 4rem;
+  background-color: var(--primary);
+  padding: 0.5rem 1.5rem;
+  color: var(--on-primary);
+}
+.container .header .geometric-shapes {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.container .header .geometric-shape-title h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.container .wrapper {
+  height: 28rem;
+  display: flex;
+}
+.container .wrapper .svg-container {
+  width: 40%;
+  background-color: rgba(var(--black-rgb), 0.7);
+}
+.container .wrapper .svg-container svg.shape {
+  width: 100%;
+  height: 100%;
+}
+.container .wrapper .svg-container svg.shape line {
+  stroke: var(--on-primary);
+}
+.container .wrapper .form-container {
+  width: 60%;
+  background-color: orange;
+}/*# sourceMappingURL=style.css.map */

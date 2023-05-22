@@ -1,0 +1,20 @@
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+$white: #ffffff;
+$black: #000000;
+$primary: #f55951;
+$on-primary: #ffffff;
+$bg-color: #f1e8e6;
+
+:root {
+  --white: #{$white};
+  --black: #{$black};
+  --black-rgb: #{hexToRGB($black)};
+  --black-lighten-10: #{lighten($black, 10)};
+  --primary: #{$primary};
+  --on-primary: #{$on-primary};
+  --bg-color: #{$bg-color};
+  --bg-color-light-5: #{lighten($bg-color, 5)};
+}
