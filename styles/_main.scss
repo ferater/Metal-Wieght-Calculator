@@ -96,22 +96,25 @@ body {
             $alpha: $svg-container-bg-color-opacity
           );
         }
+        &.selected {
+          animation: selectedElement 1s linear infinite;
+        }
       }
       /////////////////////////////////////////////////
       &.rectangle {
         & .indicator-text {
-          &.indicator-line-a {
+          &.indicator-rectangle-line-a {
             width: $rectangle-indicator-text-line-a-width;
             bottom: $rectangle-indicator-text-line-a-bottom;
             left: $rectangle-indicator-text-line-a-left;
           }
-          &.indicator-line-b {
+          &.indicator-rectangle-line-b {
             width: $rectangle-indicator-text-line-b-width;
             bottom: $rectangle-indicator-text-line-b-bottom;
             right: $rectangle-indicator-text-line-b-right;
             rotate: $rectangle-indicator-text-line-b-angle;
           }
-          &.indicator-line-h {
+          &.indicator-rectangle-line-h {
             width: $rectangle-indicator-text-line-h-width;
             bottom: $rectangle-indicator-text-line-h-bottom;
             left: $rectangle-indicator-text-line-h-left;

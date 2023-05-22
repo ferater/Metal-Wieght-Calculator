@@ -39,12 +39,12 @@
                     <line x1="430" y1="50" x2="300" y2="250"></line>
                     <!-- bottom -->
                     <!-- short lines -->
-                    <line x1="50" y1="320" x2="300" y2="320" class="line-a"></line>
+                    <line x1="50" y1="320" x2="300" y2="320" class="rectangle-line-a"></line>
                     <!-- long lines -->
-                    <line x1="430" y1="120" x2="300" y2="320" class="line-b"></line>
+                    <line x1="430" y1="120" x2="300" y2="320" class="rectangle-line-b"></line>
                     <!-- height lines -->
                     <line x1="50" y1="250" x2="50" y2="320"></line>
-                    <line x1="300" y1="250" x2="300" y2="320" class="line-h"></line>
+                    <line x1="300" y1="250" x2="300" y2="320" class="rectangle-line-h"></line>
                     <line x1="430" y1="50" x2="430" y2="120"></line>
                     <!-- length indicators -->
                     <!-- line-a indicator -->
@@ -54,24 +54,24 @@
                     <line x1="300" y1="330" x2="300" y2="350"></line>
                     <!-- line-b indicator -->
                     <line x1="445" y1="125" x2="470" y2="130"></line>
-                    <line x1="458" y1="128" x2="418" y2="190"></line>
+                    <line x1="458" y1="128" x2="430" y2="170"></line>
                     <line x1="327" y1="326" x2="365" y2="270"></line>
                     <line x1="315" y1="325" x2="340" y2="330"></line>
                 </svg>
-                <div class="indicator-text indicator-line-a">
+                <div class="indicator-text indicator-rectangle-line-a">
                     <span>0 mm</span>
                 </div>
-                <div class="indicator-text indicator-line-b">
+                <div class="indicator-text indicator-rectangle-line-b">
                     <span>0 mm</span>
                 </div>
-                <div class="indicator-text indicator-line-h">
+                <div class="indicator-text indicator-rectangle-line-h">
                     <span>0 mm</span>
                 </div>
             </div>
             <div class="form-container">
                 <div class="input-container material-select-container">
                     <label for="material-select">Material Seçiniz : * </label>
-                    <select name="material" id="material">
+                    <select name="material" id="material-select">
                         <option selected disabled>Material Seçiniz</option>
                         <option value="7.86">Demir</option>
                     </select>
@@ -81,21 +81,21 @@
                 </div>
                 <div class="input-container">
                     <label for="rectangle-line-a">Kenar A : *</label>
-                    <input type="number" name="rectangle-line-a" id="rectangle-line-a" />
+                    <input type="number" name="rectangle-line-a" id="rectangle-line-a" class="rectangle-input" />
                     <div class="unit-text">
                         <span>mm</span>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="rectangle-line-b">Kenar B : *</label>
-                    <input type="number" name="rectangle-line-b" id="rectangle-line-b" />
+                    <input type="number" name="rectangle-line-b" id="rectangle-line-b" class="rectangle-input" />
                     <div class="unit-text">
                         <span>mm</span>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="rectangle-line-h">Kalınlık (H) : *</label>
-                    <input type="number" name="rectangle-line-h" id="rectangle-line-h" />
+                    <input type="number" name="rectangle-line-h" id="rectangle-line-h" class="rectangle-input" />
                     <div class="unit-text">
                         <span>mm</span>
                     </div>

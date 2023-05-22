@@ -96,18 +96,21 @@ body {
   line-height: 2rem;
   color: rgba(var(--black-rgb), 0.7);
 }
-.container .wrapper .svg-container.rectangle .indicator-text.indicator-line-a {
+.container .wrapper .svg-container .indicator-text.selected {
+  animation: selectedElement 1s linear infinite;
+}
+.container .wrapper .svg-container.rectangle .indicator-text.indicator-rectangle-line-a {
   width: 9rem;
   bottom: 5.65rem;
   left: 6.45rem;
 }
-.container .wrapper .svg-container.rectangle .indicator-text.indicator-line-b {
+.container .wrapper .svg-container.rectangle .indicator-text.indicator-rectangle-line-b {
   width: 8rem;
   bottom: 13.25rem;
   right: 3rem;
   rotate: -59deg;
 }
-.container .wrapper .svg-container.rectangle .indicator-text.indicator-line-h {
+.container .wrapper .svg-container.rectangle .indicator-text.indicator-rectangle-line-h {
   width: 9rem;
   bottom: 9rem;
   left: 9.45rem;
