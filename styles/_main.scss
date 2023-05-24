@@ -150,7 +150,7 @@ body {
         & input {
           width: $input-width;
           height: $input-height;
-          padding: $input-padding-y $input-padding-x;
+          padding: $input-padding-top $input-padding-right $input-padding-bottom $input-padding-left;
           border: $input-border-width solid transparent;
           outline: none;
           border-radius: $input-border-radius 0 0 $input-border-radius;

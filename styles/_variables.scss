@@ -62,8 +62,10 @@ $label-text-line-height: 3rem;
 //input
 $input-width: 10rem;
 $input-height: 1.75rem;
-$input-padding-y: 0;
-$input-padding-x: 0.75rem;
+$input-padding-top: 0;
+$input-padding-right: 0;
+$input-padding-bottom: 0;
+$input-padding-left: 0.75rem;
 $input-border-width: 1px;
 $input-border-radius: 7px;
 $input-text-color: var(--primary);
