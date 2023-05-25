@@ -15,6 +15,7 @@ const rectangleDimensions = {
 const selectedClassName = "selected";
 const errorClassName = "error";
 const correctClassName = "correct";
+const showResultClassName = "show";
 
 //select  mareial select
 const mareialSelect = selectNode("select#material-select");
@@ -104,7 +105,7 @@ function clearAll() {
     indicatorText.innerHTML = `<span>0 mm</span>`;
     //clear show result
     showResult.innerHTML = `<span>0.00 Kg</span>`;
-    removeClass(showResult, "show");
+    removeClass(showResult, showResultClassName);
   });
   Object.keys(rectangleDimensions).forEach((key) => {
     rectangleDimensions[key] = 0;
@@ -140,7 +141,7 @@ function calculateWeight() {
 
   if (result > 0) {
     showResult.innerHTML = `<span>${Number(result.toFixed(2))} Kg</span>`;
-    addClass(showResult, "show");
+    addClass(showResult, showResultClassName);
   }
 }
 
