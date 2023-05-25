@@ -1,3 +1,4 @@
+import { selectNode } from "./selectNode.js";
 import { addClass, removeClass } from "./classAddRmove.js";
 
 //define const intensity
@@ -142,12 +143,4 @@ function calculateWeight() {
     addClass(showResult, "show");
   }
 }
-/////////////////////////////////
-//select node(s) function
-function selectNode(elementProp, all) {
-  if (all) {
-    return document.querySelectorAll(elementProp);
-  } else {
-    return document.querySelector(elementProp);
-  }
-}
+
