@@ -100,7 +100,7 @@ $form-warn-text-color: red;
 //form actions
 $form-actions-width: calc($label-width + $input-width + $unit-text-width);
 $form-actions-height: $input-height;
-$form-actions-margin-top: $input-height;
+$form-actions-margin-top: calc($input-height / 2);
 //action buttons
 $button-width: 45%;
 $button-height: $input-height;

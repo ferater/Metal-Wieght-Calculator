@@ -212,7 +212,7 @@ body {
 .container .wrapper .form-container .form-actions {
   width: 25rem;
   height: 1.75rem;
-  margin-top: 1.75rem;
+  margin-top: 0.875rem;
   display: flex;
   justify-content: space-between;
 }

@@ -1,3 +1,5 @@
+import { addClass, removeClass } from "./classAddRmove.js";
+
 //define const intensity
 let intensity = 0;
 
@@ -147,19 +149,5 @@ function selectNode(elementProp, all) {
     return document.querySelectorAll(elementProp);
   } else {
     return document.querySelector(elementProp);
-  }
-}
-////////////////
-//add class function
-function addClass(element, className) {
-  if (!element.classList.contains(className)) {
-    element.classList.add(className);
-  }
-}
-////////////////////
-//remove class function
-function removeClass(element, className) {
-  if (element.classList.contains(className)) {
-    element.classList.remove(className);
   }
 }
