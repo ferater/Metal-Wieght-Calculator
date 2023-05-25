@@ -105,6 +105,7 @@ function clearAll() {
     indicatorText.innerHTML = `<span>0 mm</span>`;
     //clear show result
     showResult.innerHTML = `<span>0.00 Kg</span>`;
+    mareialSelect.value = "select";
     removeClass(showResult, showResultClassName);
   });
   Object.keys(rectangleDimensions).forEach((key) => {
@@ -133,15 +134,10 @@ function calculateWeight() {
   const [a, b, h] = Object.values(rectangleDimensions);
   if (!a || !b || !h) return;
 
-  const result =
-    (a / 1000) *
-    (b / 1000) *
-    h *
-    intensity;
+  const result = (a / 1000) * (b / 1000) * h * intensity;
 
   if (result > 0) {
     showResult.innerHTML = `<span>${Number(result.toFixed(2))} Kg</span>`;
     addClass(showResult, showResultClassName);
   }
 }
-
