@@ -32,7 +32,7 @@ body {
   width: 80rem;
   height: 32rem;
   background-color: var(--bgcolor);
-  border-radius: 2rem;
+  border-radius: 1rem;
   box-shadow: 0px 0px 0.625rem rgba(var(--black-rgb), 0.3);
   overflow: hidden;
 }
@@ -99,6 +99,30 @@ body {
 .container .wrapper .svg-container .indicator-text.selected {
   animation: selectedElement 1s linear infinite;
 }
+.container .wrapper .svg-container .show-result {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  background-color: var(--primary);
+  border-radius: 7px;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  translate: -50% 0;
+  text-align: center;
+  scale: 0;
+  transition: scale 0.15s linear;
+}
+.container .wrapper .svg-container .show-result.show {
+  scale: 1;
+}
+.container .wrapper .svg-container .show-result span {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: var(--on-primary);
+}
 .container .wrapper .svg-container.rectangle .indicator-text.indicator-rectangle-line-a {
   width: 9rem;
   bottom: 5.65rem;
@@ -135,11 +159,15 @@ body {
 .container .wrapper .form-container .input-container select {
   width: 10rem;
   height: 1.75rem;
-  padding: 0 0.75rem;
+  padding: 0 0 0 0.75rem;
   border: 1px solid transparent;
   outline: none;
   border-radius: 7px 0 0 7px;
   box-shadow: 3px 3px rgba(var(--black-rgb), 0.3);
+}
+.container .wrapper .form-container .input-container select.error {
+  border-color: var(--primary);
+  animation: selectedElement 1s linear infinite;
 }
 .container .wrapper .form-container .input-container input {
   width: 10rem;
@@ -155,6 +183,10 @@ body {
 .container .wrapper .form-container .input-container input:focus {
   border-color: var(--primary);
 }
+.container .wrapper .form-container .input-container input.error {
+  border-color: var(--primary);
+  animation: selectedElement 1s linear infinite;
+}
 .container .wrapper .form-container .input-container .unit-text {
   width: 3rem;
   height: 1.75rem;
@@ -167,6 +199,15 @@ body {
   font-size: 1rem;
   line-height: 1.75rem;
   color: var(--on-primary);
+}
+.container .wrapper .form-container .input-container .unit-text.error {
+  animation: selectedElement 1s linear infinite;
+}
+.container .wrapper .form-container .form-warn .warn {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: red;
 }
 .container .wrapper .form-container .form-actions {
   width: 25rem;

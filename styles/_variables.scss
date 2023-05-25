@@ -2,7 +2,7 @@
 $container-width: 80rem;
 $container-hegiht: 32rem;
 $container-bg-color: var(--bgcolor);
-$container-border-radius: 2rem;
+$container-border-radius: 1rem;
 $container-shadow-color: var(--bgcolor);
 $container-shadow-blur: 0.625rem;
 $container-shadow-color: var(--black-rgb);
@@ -46,6 +46,19 @@ $rectangle-indicator-text-line-b-angle: -59deg;
 $rectangle-indicator-text-line-h-width: 9rem;
 $rectangle-indicator-text-line-h-bottom: 9rem;
 $rectangle-indicator-text-line-h-left: 9.45rem;
+//show result
+$show-result-width: fit-content;
+$show-result-height: 2.5rem;
+$show-result-padding-y: 0;
+$show-result-padding-x: 0.75rem;
+$show-result-bgcolor: var(--primary);
+$show-result-border-radius: 7px;
+$show-result-bottom-position: 1rem;
+//show result text
+$show-result-text-weight: 500;
+$show-result-text-size: 1.25rem;
+$show-result-text-line-height: $show-result-height;
+$show-result-text-color: var(--on-primary);
 ///////////////////////////////////////
 /// form container
 $form-container-width: 60%;
@@ -79,6 +92,11 @@ $unit-text-padding-x: 0.5rem;
 $unit-text-text-size: 1rem;
 $unit-text-text-line-height: $input-height;
 $unit-text-text-color: var(--on-primary);
+//form warn text
+$form-warn-text-weight: 500;
+$form-warn-text-size: 1rem;
+$form-warn-text-line-height: $show-result-height;
+$form-warn-text-color: red;
 //form actions
 $form-actions-width: calc($label-width + $input-width + $unit-text-width);
 $form-actions-height: $input-height;

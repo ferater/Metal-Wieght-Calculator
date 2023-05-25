@@ -24,8 +24,7 @@ body {
   height: $container-hegiht;
   background-color: $container-bg-color;
   border-radius: $container-border-radius;
-  box-shadow: 0px 0px $container-shadow-blur
-    rgba($color: $container-shadow-color, $alpha: $container-shadow-opacity);
+  box-shadow: 0px 0px $container-shadow-blur rgba($color: $container-shadow-color, $alpha: $container-shadow-opacity);
   overflow: hidden;
   //////////////////////////
   & .header {
@@ -54,10 +53,7 @@ body {
     & .svg-container {
       width: $svg-container-width;
       height: inherit;
-      background-color: rgba(
-        $color: $svg-container-bg-color,
-        $alpha: $svg-container-bg-color-opacity
-      );
+      background-color: rgba($color: $svg-container-bg-color, $alpha: $svg-container-bg-color-opacity);
       position: relative;
       & svg.shape {
         width: $svg-width;
@@ -91,13 +87,33 @@ body {
         & span {
           font-size: $svg-indicator-text-size;
           line-height: $svg-indicator-text-height;
-          color: rgba(
-            $color: $svg-container-bg-color,
-            $alpha: $svg-container-bg-color-opacity
-          );
+          color: rgba($color: $svg-container-bg-color, $alpha: $svg-container-bg-color-opacity);
         }
         &.selected {
           animation: selectedElement 1s linear infinite;
+        }
+      }
+      & .show-result{
+        width: $show-result-width;
+        height: $show-result-height;
+        padding:$show-result-padding-y $show-result-padding-x;
+        background-color: $show-result-bgcolor;
+        border-radius: $show-result-border-radius;
+        position: absolute;
+        bottom: $show-result-bottom-position;
+        left: 50%;
+        translate: -50% 0;
+        text-align: center;
+        scale: 0;
+        transition: scale .15s linear;
+        &.show{
+          scale: 1;
+        }
+        & span{
+          font-weight: $show-result-text-weight;
+          font-size: $show-result-text-size;
+          line-height: $show-result-text-line-height;
+          color: $show-result-text-color;
         }
       }
       /////////////////////////////////////////////////
@@ -141,11 +157,15 @@ body {
         & select {
           width: $input-width;
           height: $input-height;
-          padding: $input-padding-y $input-padding-x;
+          padding: $input-padding-top $input-padding-right $input-padding-bottom $input-padding-left;
           border: $input-border-width solid transparent;
           outline: none;
           border-radius: $input-border-radius 0 0 $input-border-radius;
           box-shadow: 3px 3px rgba($color: var(--black-rgb), $alpha: 0.3);
+          &.error {
+            border-color: $input-focus-border-color;
+            animation: selectedElement 1s linear infinite;
+          }
         }
         & input {
           width: $input-width;
@@ -160,6 +180,10 @@ body {
           &:focus {
             border-color: $input-focus-border-color;
           }
+          &.error {
+            border-color: $input-focus-border-color;
+            animation: selectedElement 1s linear infinite;
+          }
         }
         & .unit-text {
           width: $unit-text-width;
@@ -173,6 +197,17 @@ body {
             line-height: $unit-text-text-line-height;
             color: $unit-text-text-color;
           }
+          &.error {
+            animation: selectedElement 1s linear infinite;
+          }
+        }
+      }
+      & .form-warn{
+        & .warn{
+          font-weight: $form-warn-text-weight;
+          font-size: $form-warn-text-size;
+          line-height: $form-warn-text-line-height;
+          color: $form-warn-text-color;
         }
       }
       & .form-actions {
