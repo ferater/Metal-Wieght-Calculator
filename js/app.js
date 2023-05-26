@@ -1,6 +1,7 @@
 import { selectNode } from "./selectNode.js";
 import { addClass, removeClass } from "./classAddRemove.js";
 
+
 //define const intensity
 let intensity = 0;
 
@@ -142,7 +143,7 @@ function calculateWeight() {
   const result = (a / 1000) * (b / 1000) * h * intensity;
 
   if (result > 0) {
-    showResult.innerHTML = `<span>${Number(result.toFixed(2))} Kg</span>`;
+    showResult.innerHTML = `<span>${parseFloat(result.toFixed(2))} Kg</span>`;
     addClass(showResult, showResultClassName);
   }
 }
