@@ -1,5 +1,5 @@
 import { selectNode } from "./selectNode.js";
-import { addClass, removeClass } from "./classAddRmove.js";
+import { addClass, removeClass } from "./classAddRemove.js";
 
 //define const intensity
 let intensity = 0;
