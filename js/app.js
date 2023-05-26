@@ -89,8 +89,6 @@ function clearAll() {
   inputs.forEach((input) => {
     const line = selectNode(`.${input.id}`);
     const indicatorText = selectNode(`.indicator-${input.id}`);
-    //remove mareialSelect error class
-    removeClass(mareialSelect, errorClassName);
     //clear input values
     input.value = "";
     //clear input classes
@@ -103,11 +101,18 @@ function clearAll() {
     removeClass(line, correctClassName);
     //clear line indicator texts
     indicatorText.innerHTML = `<span>0 mm</span>`;
-    //clear show result
-    showResult.innerHTML = `<span>0.00 Kg</span>`;
-    mareialSelect.value = "select";
-    removeClass(showResult, showResultClassName);
   });
+  //remove mareialSelect error class
+  removeClass(mareialSelect, errorClassName);
+  //clear show result
+  showResult.innerHTML = `<span>0.00 Kg</span>`;
+  //clear materialselect
+  mareialSelect.value = "select";
+  intensity = 0;
+  mareialIntensityText.innerHTML = `<span></span>`;
+  //hide resulst
+  removeClass(showResult, showResultClassName);
+  // clear dimesnions
   Object.keys(rectangleDimensions).forEach((key) => {
     rectangleDimensions[key] = 0;
   });
